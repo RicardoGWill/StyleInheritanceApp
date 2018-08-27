@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Below is a list of levels of attributes that override others that may be present. -->
+    <!-- "main_activity.xml" > "style_1.style_2" > "style_1". -->
+    <style name="style_1" parent="TextAppearance.AppCompat.Large">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">#FF0000</item>
+    </style>
+
+    <!-- "style_1.style_2" will inherit from "style_1" if no different attributes are given. -->
+    <!-- The given textColor "green" (#008000) overrides the "style1" "red" (#FF0000) color. -->
+    <!-- However, all other (un-named) attributes are inherited from "style_1". -->
+    <style name="style_1.style_2">
+        <item name="android:textColor">#008000</item>
+    </style>
+
+
+</resources>
